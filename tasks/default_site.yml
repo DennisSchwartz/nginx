@@ -51,4 +51,4 @@
   service:
     name: nginx
     state: reloaded
-  when: not nginx_default_index.stat.exists
+  when: not nginx_default_index.stat.exists and (nginx_managed_service is defined and nginx_managed_service == true)
