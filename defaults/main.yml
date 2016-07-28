@@ -30,14 +30,14 @@ nginx_disable_access_log: no
 nginx_server_tokens: 'off'
 nginx_sendfile: 'on'
 nginx_keepalive: "on"
-nginx_keepalive_timeout: "30"
-nginx_client_body_timeout: "10"
-nginx_client_header_timeout: "10"
-nginx_send_timeout: "10"
+nginx_keepalive_timeout: "999999999"
+nginx_client_body_timeout: "999999999"
+nginx_client_header_timeout: "999999999"
+nginx_send_timeout: "999999999"
 nginx_buffers: "on"
 nginx_client_body_buffer_size: "1k"
 nginx_client_header_buffer_size: "1k"
-nginx_client_max_body_size: "2m"
+nginx_client_max_body_size: "5000m"
 nginx_large_client_header_buffers: "2 1k"
 nginx_server_names_hash_bucket_size: 64
 nginx_types_hash_max_size: 2048
